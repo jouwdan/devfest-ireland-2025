@@ -37,6 +37,12 @@
       "name": "Your Company",
       "description": "Silver Sponsor",
       "logo": "SILVER"
+    },
+    {
+      "id": "silver-3",
+      "name": "Your Company",
+      "description": "Silver Sponsor",
+      "logo": "SILVER"
     }
   ],
   "bronzeSponsors": [
