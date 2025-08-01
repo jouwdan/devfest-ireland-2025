@@ -9,13 +9,15 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "DevFest Ireland 2025 | Premier Developer Conference",
   description:
-    "Join Ireland's premier developer conference for a day of learning, networking, and innovation. Discover the latest in Google technologies and connect with the developer community.",
-  keywords: "DevFest, Ireland, Google, Developer, Conference, Technology, AI, Web Development, Mobile, Cloud",
+    "Join Ireland's largest free tech event for a day of learning, networking, and innovation. Discover the latest in Google technologies and connect with the developer community.",
+  keywords:
+    "DevFest, Ireland, Google, Developer, Conference, Technology, AI, Web Development, Mobile, Cloud",
   authors: [{ name: "Google Developer Groups Ireland" }],
   openGraph: {
     title: "DevFest Ireland 2025",
-    description: "Ireland's premier developer conference - December 6th, 2025 in Portlaoise",
-    url: "https://devfest.ie",
+    description:
+      "Ireland's largest free tech event - December 6th, 2025 in Portlaoise",
+    url: "https://devfestireland.com",
     siteName: "DevFest Ireland 2025",
     images: [
       {
@@ -31,7 +33,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "DevFest Ireland 2025",
-    description: "Ireland's premier developer conference - December 6th, 2025 in Portlaoise",
+    description:
+      "Ireland's premier developer conference - December 6th, 2025 in Portlaoise",
     images: ["/images/devfest-branding.png"],
   },
   robots: {
@@ -45,8 +48,8 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,

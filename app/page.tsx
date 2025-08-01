@@ -28,11 +28,12 @@ export default function DevFestIreland2025() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center space-x-3 text-center">
             <Megaphone className="w-5 h-5" />
-            <span className="font-semibold">Call for Speakers is now open!</span>
+            <span className="font-semibold">
+              Call for Speakers is now open!
+            </span>
             <Button
               size="sm"
-              className="bg-white text-green-600 hover:bg-gray-100 ml-2 px-4 py-1 text-sm font-semibold"
-            >
+              className="bg-white text-green-600 hover:bg-gray-100 ml-2 px-4 py-1 text-sm font-semibold">
               Submit Your Talk
             </Button>
           </div>
@@ -56,11 +57,15 @@ export default function DevFestIreland2025() {
             <div className="mb-8">
               <div className="inline-flex items-center space-x-4 mb-6">
                 <span className="text-6xl font-bold text-yellow-500">{`{`}</span>
-                <h1 className="text-6xl md:text-8xl font-bold text-gray-900">DevFest</h1>
+                <h1 className="text-6xl md:text-8xl font-bold text-gray-900">
+                  DevFest
+                </h1>
                 <span className="text-6xl font-bold text-yellow-500">{`}`}</span>
               </div>
               <div className="flex items-center justify-center space-x-4 mb-6">
-                <Badge className="bg-blue-600 text-white px-4 py-2 text-lg">Ireland 2025</Badge>
+                <Badge className="bg-blue-600 text-white px-4 py-2 text-lg">
+                  Ireland 2025
+                </Badge>
                 <div className="text-4xl">✦</div>
                 <div className="flex items-center space-x-2">
                   <div className="w-6 h-6 bg-blue-500 rounded transform rotate-45"></div>
@@ -72,30 +77,36 @@ export default function DevFestIreland2025() {
             </div>
 
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Join Ireland's premier developer conference for a day of learning, networking, and innovation. Discover
-              the latest in Google technologies and connect with the developer community.
+              Join Ireland's largest free tech event for a day of learning,
+              networking, and innovation. Discover the latest in Google
+              technologies and connect with the developer community.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
               <div className="flex items-center space-x-2 text-gray-700">
                 <CalendarDays className="w-5 h-5 text-blue-600" />
-                <span className="font-semibold">Saturday, December 6th, 2025</span>
+                <span className="font-semibold">
+                  Saturday December 6th 2025, 09:00 - 17:00
+                </span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <MapPin className="w-5 h-5 text-red-500" />
-                <span className="font-semibold">Midlands Park Hotel, Portlaoise</span>
+                <span className="font-semibold">
+                  Midlands Park Hotel, Portlaoise
+                </span>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
                 Register for Free
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-3 text-lg bg-transparent"
-              >
+                className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-3 text-lg bg-transparent">
                 View Schedule
               </Button>
             </div>
@@ -107,9 +118,12 @@ export default function DevFestIreland2025() {
       <section id="about" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What to Expect</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              What to Expect
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              A full day of technical sessions, workshops, and networking opportunities
+              A full day of technical sessions, workshops, and networking
+              opportunities
             </p>
           </div>
 
@@ -123,7 +137,8 @@ export default function DevFestIreland2025() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Deep dives into the latest Google technologies, frameworks, and developer tools
+                  Deep dives into the latest technologies, frameworks,
+                  and developer tools
                 </CardDescription>
               </CardContent>
             </Card>
@@ -137,7 +152,8 @@ export default function DevFestIreland2025() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Hands-on learning experiences with expert guidance and practical applications
+                  Hands-on learning experiences with expert guidance and
+                  practical applications
                 </CardDescription>
               </CardContent>
             </Card>
@@ -151,7 +167,8 @@ export default function DevFestIreland2025() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Connect with fellow developers, industry experts, and Google Developer Groups
+                  Connect with fellow developers, industry experts, and Google
+                  Developer Groups
                 </CardDescription>
               </CardContent>
             </Card>
@@ -165,7 +182,8 @@ export default function DevFestIreland2025() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Join Ireland's vibrant developer community and make lasting connections
+                  Join Ireland's vibrant developer community and make lasting
+                  connections
                 </CardDescription>
               </CardContent>
             </Card>
@@ -177,7 +195,9 @@ export default function DevFestIreland2025() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Keynote Speakers</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Keynote Speakers
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Learn from industry leaders and Google Developer Experts
             </p>
@@ -185,14 +205,22 @@ export default function DevFestIreland2025() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {featuredSpeakers.map((speaker) => (
-              <SpeakerCard key={speaker.id} speaker={speaker} showSession={false} />
+              <SpeakerCard
+                key={speaker.id}
+                speaker={speaker}
+                showSession={false}
+              />
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-6">Meet all our amazing speakers and see their full session details</p>
+            <p className="text-gray-600 mb-6">
+              Meet all our amazing speakers and see their full session details
+            </p>
             <Link href="/speakers">
-              <Button className="bg-blue-600 hover:bg-blue-700">View All Speakers</Button>
+              <Button className="bg-blue-600 hover:bg-blue-700">
+                View All Speakers
+              </Button>
             </Link>
           </div>
         </div>
@@ -211,38 +239,58 @@ export default function DevFestIreland2025() {
       <section id="schedule" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Event Overview</h2>
-            <p className="text-xl text-gray-600">Saturday, December 6th, 2025</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Event Overview
+            </h2>
+            <p className="text-xl text-gray-600">
+              Saturday, December 6th, 2025
+            </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="p-6 bg-blue-50 rounded-lg">
                 <Clock className="w-8 h-8 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-900 mb-2">Full Day Event</h3>
-                <p className="text-gray-600">9:00 AM - 6:00 PM</p>
-                <p className="text-sm text-gray-500 mt-2">Registration, sessions, workshops, and networking</p>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Full Day Event
+                </h3>
+                <p className="text-gray-600">09:00 - 17:00</p>
+                <p className="text-sm text-gray-500 mt-2">
+                  Registration, sessions, workshops, and networking
+                </p>
               </div>
               <div className="p-6 bg-green-50 rounded-lg">
                 <Users className="w-8 h-8 text-green-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-900 mb-2">Expert Speakers</h3>
-                <p className="text-gray-600">20+ Sessions</p>
-                <p className="text-sm text-gray-500 mt-2">Industry leaders and Google Developer Experts</p>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Expert Speakers
+                </h3>
+                <p className="text-gray-600">10+ Sessions</p>
+                <p className="text-sm text-gray-500 mt-2">
+                  Industry leaders and Google Developer Experts
+                </p>
               </div>
               <div className="p-6 bg-purple-50 rounded-lg">
                 <MapPin className="w-8 h-8 text-purple-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-900 mb-2">Central Location</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Central Location
+                </h3>
                 <p className="text-gray-600">Portlaoise</p>
-                <p className="text-sm text-gray-500 mt-2">Easy access from all parts of Ireland</p>
+                <p className="text-sm text-gray-500 mt-2">
+                  Easy access from all parts of Ireland
+                </p>
               </div>
             </div>
 
             <div className="text-center mt-12">
               <Link href="/schedule">
-                <Button className="bg-blue-600 hover:bg-blue-700 mr-4">View Full Schedule</Button>
+                <Button className="bg-blue-600 hover:bg-blue-700 mr-4">
+                  View Full Schedule
+                </Button>
               </Link>
               <Link href="/venue">
-                <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent">
+                <Button
+                  variant="outline"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent">
                   Venue Details
                 </Button>
               </Link>
@@ -254,20 +302,23 @@ export default function DevFestIreland2025() {
       {/* Call to Action */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-green-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Join DevFest Ireland 2025?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Join DevFest Ireland 2025?
+          </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Don't miss out on Ireland's premier developer conference. Register now for free and be part of the
-            community!
+            Don't miss out on Ireland's premier developer conference. Register
+            now for free and be part of the community!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+            <Button
+              size="lg"
+              className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
               Register for Free
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg bg-transparent"
-            >
+              className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg bg-transparent">
               Follow Updates
             </Button>
           </div>
@@ -277,5 +328,5 @@ export default function DevFestIreland2025() {
       <Footer />
       <ScrollToTopButton />
     </div>
-  )
+  );
 }

@@ -31,11 +31,12 @@
       {
         "type": "car",
         "title": "By Car",
-        "description": "Free parking available at the hotel. Portlaoise is easily accessible via the M7 motorway.",
+        "description": "Paid parking available at the hotel. Portlaoise is easily accessible via the M7 motorway.",
         "routes": [
-          { "from": "Dublin", "duration": "1 hour via M7" },
-          { "from": "Cork", "duration": "1.5 hours via M8/M7" },
-          { "from": "Galway", "duration": "1.5 hours via M6/M7" }
+          { "from": "Dublin", "duration": "1h via N7/M7" },
+          { "from": "Cork", "duration": "1h 45m via M8/M7" },
+          { "from": "Galway", "duration": "2h via M6/N52/N80" },
+          { "from": "Belfast", "duration": "2h 45m via M1/M50/M7" }
         ]
       },
       {
@@ -43,18 +44,29 @@
         "title": "By Train",
         "description": "Portlaoise Railway Station is a 5-minute walk from the hotel. Regular services from major cities.",
         "routes": [
-          { "from": "Dublin", "duration": "1 hour direct" },
-          { "from": "Cork", "duration": "1.5 hours direct" },
-          { "frequency": "Every 2 hours" }
+          { "from": "Dublin", "duration": "1h, direct" },
+          { "from": "Cork", "duration": "2h, direct" },
+          { "from": "Galway", "duration": "2h, connecting" },
+          { "from": "Belfast", "duration": "4h 30m, connecting" }
         ]
       },
       {
         "type": "bus",
         "title": "By Bus",
-        "description": "Bus Éireann services connect Portlaoise to major cities across Ireland.",
+        "description": "Bus services connect Portlaoise to major cities across Ireland.",
         "routes": [
-          { "route": "Route 7", "description": "Dublin-Cork via Portlaoise" },
-          { "route": "Route 20", "description": "Dublin-Tralee via Portlaoise" },
+          {
+            "route": "Dublin - Portlaoise",
+            "description": "JJ Kavanagh, Dublin Coach"
+          },
+          {
+            "route": "Limerick - Portlaoise",
+            "description": "JJ Kavanagh"
+          },
+          {
+            "route": "Athlone - Portlaoise",
+            "description": "Bus Éireann (73 Towards Waterford)"
+          },
           { "note": "Bus Stop: 2-minute walk to hotel" }
         ]
       }
@@ -64,14 +76,14 @@
         "name": "Midlands Park Hotel",
         "type": "Event Venue",
         "description": "Stay at the event venue for maximum convenience. Special rates available for DevFest attendees.",
-        "rate": "€89/night",
+        "rate": "€189/night",
         "includes": "Breakfast & WiFi",
         "deadline": "November 15th"
       },
       "nearby": {
         "title": "Nearby Hotels",
-        "description": "Several other hotels and B&Bs within walking distance of the venue.",
-        "options": ["Heritage Hotel (5 min walk)", "Killeshin Hotel (10 min walk)", "Various B&Bs nearby"]
+        "description": "Other hotels close to the venue.",
+        "options": ["Killeshin Hotel", "Maldron Hotel"]
       }
     }
   }

@@ -1,13 +1,19 @@
 {
   "goldSponsors": [
     {
-      "id": "gold-1",
-      "name": "Your Company Here",
+      "id": "google-for-developers",
+      "name": "Google for Developers",
       "description": "Become a Gold Sponsor",
       "logo": "GOLD"
     },
     {
       "id": "gold-2",
+      "name": "Your Company Here",
+      "description": "Become a Gold Sponsor",
+      "logo": "GOLD"
+    },
+    {
+      "id": "gold-3",
       "name": "Your Company Here",
       "description": "Become a Gold Sponsor",
       "logo": "GOLD"
