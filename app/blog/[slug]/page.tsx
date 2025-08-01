@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowLeft, Share2 } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import ScrollToTopButton from "@/components/layout/ScrollToTopButton"
 
 // Import data
 import blogData from "@/data/blog-posts.json"
@@ -277,6 +278,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       </section>
 
       <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }

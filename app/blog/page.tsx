@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, ArrowRight } from "lucide-react"
 import Link from "next/link"
+import ScrollToTopButton from "@/components/layout/ScrollToTopButton"
 
 // Import data
 import blogData from "@/data/blog-posts.json"
@@ -191,6 +192,7 @@ export default function BlogPage() {
       </section>
 
       <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }

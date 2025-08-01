@@ -10,6 +10,7 @@ import Footer from "@/components/layout/Footer"
 import SpeakerCard from "@/components/sections/SpeakerCard"
 import SponsorsSection from "@/components/sections/SponsorsSection"
 import OrganizersSection from "@/components/sections/OrganizersSection"
+import ScrollToTopButton from "@/components/layout/ScrollToTopButton"
 
 // Import data
 import speakersData from "@/data/speakers.json"
@@ -102,8 +103,8 @@ export default function DevFestIreland2025() {
         </div>
       </section>
 
-      {/* Event Highlights */}
-      <section className="py-16 bg-gray-50">
+      {/* Event Highlights - Add the about anchor here */}
+      <section id="about" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What to Expect</h2>
@@ -274,6 +275,7 @@ export default function DevFestIreland2025() {
       </section>
 
       <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }

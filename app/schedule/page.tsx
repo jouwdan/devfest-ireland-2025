@@ -6,6 +6,7 @@ import ScheduleItem from "@/components/sections/ScheduleItem"
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin } from "lucide-react"
 import Link from "next/link"
+import ScrollToTopButton from "@/components/layout/ScrollToTopButton"
 
 // Import data
 import scheduleData from "@/data/schedule.json"
@@ -77,6 +78,7 @@ export default function SchedulePage() {
       </section>
 
       <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }

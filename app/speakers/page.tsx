@@ -5,6 +5,7 @@ import SpeakerCard from "@/components/sections/SpeakerCard"
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin } from "lucide-react"
 import Link from "next/link"
+import ScrollToTopButton from "@/components/layout/ScrollToTopButton"
 
 // Import data
 import speakersData from "@/data/speakers.json"
@@ -70,6 +71,7 @@ export default function SpeakersPage() {
       </section>
 
       <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }

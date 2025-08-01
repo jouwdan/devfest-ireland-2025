@@ -18,6 +18,7 @@ import {
   MapPin,
 } from "lucide-react"
 import Link from "next/link"
+import ScrollToTopButton from "@/components/layout/ScrollToTopButton"
 
 // Import data
 import venueData from "@/data/venue.json"
@@ -276,6 +277,7 @@ export default function VenuePage() {
       </section>
 
       <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }
