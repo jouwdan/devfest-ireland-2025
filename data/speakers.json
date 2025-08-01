@@ -1,0 +1,82 @@
+{
+  "speakers": [
+    {
+      "id": "jane-smith",
+      "name": "Jane Smith",
+      "title": "Senior Software Engineer",
+      "company": "Google",
+      "expertise": "Google Developer Expert",
+      "bio": "Jane is a Senior Software Engineer at Google with over 8 years of experience in AI/ML and cloud technologies. She leads the development of machine learning infrastructure and has contributed to several open-source projects.",
+      "session": "The Future of AI in Web Development",
+      "track": "AI & Machine Learning",
+      "time": "10:30 AM - 11:15 AM",
+      "color": "blue",
+      "initials": "JS"
+    },
+    {
+      "id": "michael-davis",
+      "name": "Michael Davis",
+      "title": "Lead Mobile Developer",
+      "company": "Flutter Team",
+      "expertise": "Flutter Expert",
+      "bio": "Michael has been working with Flutter since its early days and has built mobile apps used by millions. He's passionate about cross-platform development and developer experience.",
+      "session": "Building Beautiful UIs with Flutter 3.0",
+      "track": "Mobile Development",
+      "time": "11:30 AM - 12:15 PM",
+      "color": "green",
+      "initials": "MD"
+    },
+    {
+      "id": "sarah-oconnor",
+      "name": "Sarah O'Connor",
+      "title": "Cloud Solutions Architect",
+      "company": "Google Cloud",
+      "expertise": "Cloud Architect",
+      "bio": "Sarah helps enterprises migrate to and scale on Google Cloud Platform. She specializes in containerization, microservices, and DevOps practices.",
+      "session": "Scaling Applications with Google Cloud Run",
+      "track": "Cloud & Infrastructure",
+      "time": "2:00 PM - 2:45 PM",
+      "color": "purple",
+      "initials": "SO"
+    },
+    {
+      "id": "david-wilson",
+      "name": "David Wilson",
+      "title": "Senior Frontend Engineer",
+      "company": "Stripe",
+      "expertise": "Web Technologies Expert",
+      "bio": "David is a frontend engineering leader with expertise in modern web frameworks, performance optimization, and developer tooling.",
+      "session": "Modern Web Performance Optimization",
+      "track": "Web Development",
+      "time": "3:00 PM - 3:45 PM",
+      "color": "red",
+      "initials": "DW"
+    },
+    {
+      "id": "emma-thompson",
+      "name": "Emma Thompson",
+      "title": "DevOps Engineer",
+      "company": "GitHub",
+      "expertise": "DevOps & CI/CD",
+      "bio": "Emma specializes in building robust CI/CD pipelines and infrastructure automation. She's passionate about developer productivity and security.",
+      "session": "GitHub Actions for Modern DevOps",
+      "track": "DevOps & Tools",
+      "time": "4:00 PM - 4:45 PM",
+      "color": "yellow",
+      "initials": "ET"
+    },
+    {
+      "id": "james-murphy",
+      "name": "James Murphy",
+      "title": "Data Scientist",
+      "company": "DeepMind",
+      "expertise": "Machine Learning Research",
+      "bio": "James works on cutting-edge AI research at DeepMind, focusing on reinforcement learning and neural networks for real-world applications.",
+      "session": "Practical Machine Learning with TensorFlow",
+      "track": "AI & Machine Learning",
+      "time": "10:30 AM - 11:15 AM",
+      "color": "indigo",
+      "initials": "JM"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "venue": {
+    "name": "Midlands Park Hotel",
+    "address": "Jessop Street, Portlaoise, Co. Laois, R32 EN52, Ireland",
+    "phone": "+353 57 867 8608",
+    "email": "info@midlandsparkhotel.com",
+    "description": "The Midlands Park Hotel is a modern 4-star hotel located in the heart of Portlaoise, making it the perfect central location for DevFest Ireland 2025. The hotel offers state-of-the-art conference facilities and is easily accessible from all parts of Ireland.",
+    "features": [
+      {
+        "name": "High-Speed WiFi",
+        "description": "Complimentary high-speed internet throughout the venue",
+        "icon": "wifi"
+      },
+      {
+        "name": "Coffee & Refreshments",
+        "description": "Multiple coffee stations and refreshment areas",
+        "icon": "coffee"
+      },
+      {
+        "name": "Restaurant",
+        "description": "On-site restaurant serving lunch and refreshments",
+        "icon": "utensils"
+      },
+      {
+        "name": "Accessibility",
+        "description": "Fully accessible venue with elevators and ramps",
+        "icon": "accessibility"
+      }
+    ],
+    "transportation": [
+      {
+        "type": "car",
+        "title": "By Car",
+        "description": "Free parking available at the hotel. Portlaoise is easily accessible via the M7 motorway.",
+        "routes": [
+          { "from": "Dublin", "duration": "1 hour via M7" },
+          { "from": "Cork", "duration": "1.5 hours via M8/M7" },
+          { "from": "Galway", "duration": "1.5 hours via M6/M7" }
+        ]
+      },
+      {
+        "type": "train",
+        "title": "By Train",
+        "description": "Portlaoise Railway Station is a 5-minute walk from the hotel. Regular services from major cities.",
+        "routes": [
+          { "from": "Dublin", "duration": "1 hour direct" },
+          { "from": "Cork", "duration": "1.5 hours direct" },
+          { "frequency": "Every 2 hours" }
+        ]
+      },
+      {
+        "type": "bus",
+        "title": "By Bus",
+        "description": "Bus Éireann services connect Portlaoise to major cities across Ireland.",
+        "routes": [
+          { "route": "Route 7", "description": "Dublin-Cork via Portlaoise" },
+          { "route": "Route 20", "description": "Dublin-Tralee via Portlaoise" },
+          { "note": "Bus Stop: 2-minute walk to hotel" }
+        ]
+      }
+    ],
+    "accommodation": {
+      "venue": {
+        "name": "Midlands Park Hotel",
+        "type": "Event Venue",
+        "description": "Stay at the event venue for maximum convenience. Special rates available for DevFest attendees.",
+        "rate": "€89/night",
+        "includes": "Breakfast & WiFi",
+        "deadline": "November 15th"
+      },
+      "nearby": {
+        "title": "Nearby Hotels",
+        "description": "Several other hotels and B&Bs within walking distance of the venue.",
+        "options": ["Heritage Hotel (5 min walk)", "Killeshin Hotel (10 min walk)", "Various B&Bs nearby"]
+      }
+    }
+  }
+}

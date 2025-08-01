@@ -1,0 +1,34 @@
+{
+  "organizers": [
+    {
+      "id": "gdg-dublin",
+      "name": "Dublin",
+      "description": "Ireland's largest developer community in the capital city",
+      "color": "blue"
+    },
+    {
+      "id": "gdg-belfast",
+      "name": "Belfast",
+      "description": "Northern Ireland's thriving tech community hub",
+      "color": "green"
+    },
+    {
+      "id": "gdg-portlaoise",
+      "name": "Portlaoise",
+      "description": "Our host city's growing developer community",
+      "color": "red"
+    },
+    {
+      "id": "gdg-galway",
+      "name": "Galway",
+      "description": "West coast innovation and technology leaders",
+      "color": "yellow"
+    },
+    {
+      "id": "gdg-athlone",
+      "name": "Athlone",
+      "description": "Midlands tech community connecting all of Ireland",
+      "color": "purple"
+    }
+  ]
+}

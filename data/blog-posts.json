@@ -1,0 +1,79 @@
+{
+  "blogPosts": [
+    {
+      "slug": "devfest-2025-announcement",
+      "title": "DevFest Ireland 2025: Bigger and Better Than Ever",
+      "excerpt": "We're excited to announce DevFest Ireland 2025, taking place in the heart of Ireland with amazing speakers, workshops, and networking opportunities.",
+      "publishDate": "2024-10-15",
+      "readingTime": "3 min read",
+      "author": {
+        "name": "Sarah O'Brien",
+        "role": "Event Organizer",
+        "avatar": "SO",
+        "bio": "Sarah is the lead organizer for DevFest Ireland and has been involved with Google Developer Groups for over 5 years."
+      },
+      "tags": ["announcement", "devfest", "ireland"],
+      "featured": true
+    },
+    {
+      "slug": "call-for-speakers-open",
+      "title": "Call for Speakers Now Open - Share Your Expertise",
+      "excerpt": "Are you passionate about technology and want to share your knowledge? Our call for speakers is now open for DevFest Ireland 2025.",
+      "publishDate": "2024-11-01",
+      "readingTime": "2 min read",
+      "author": {
+        "name": "Michael Kelly",
+        "role": "Program Committee",
+        "avatar": "MK",
+        "bio": "Michael leads the program committee for DevFest Ireland and is passionate about fostering knowledge sharing in the developer community."
+      },
+      "tags": ["speakers", "cfp", "community"],
+      "featured": false
+    },
+    {
+      "slug": "google-technologies-2025",
+      "title": "What's New in Google Technologies for 2025",
+      "excerpt": "Explore the latest updates and innovations in Google's developer ecosystem that will be featured at DevFest Ireland 2025.",
+      "publishDate": "2024-11-10",
+      "readingTime": "5 min read",
+      "author": {
+        "name": "Emma Thompson",
+        "role": "Google Developer Expert",
+        "avatar": "ET",
+        "bio": "Emma is a Google Developer Expert in Web Technologies and has been building web applications for over 8 years."
+      },
+      "tags": ["google", "technology", "ai", "cloud"],
+      "featured": false
+    },
+    {
+      "slug": "community-spotlight-gdg-dublin",
+      "title": "Community Spotlight: GDG Dublin's Amazing Year",
+      "excerpt": "Take a look at the incredible work and events organized by Google Developer Group Dublin throughout 2024.",
+      "publishDate": "2024-11-20",
+      "readingTime": "4 min read",
+      "author": {
+        "name": "David Wilson",
+        "role": "GDG Dublin Organizer",
+        "avatar": "DW",
+        "bio": "David leads GDG Dublin and has been organizing developer events for over 6 years."
+      },
+      "tags": ["community", "gdg", "dublin", "events"],
+      "featured": false
+    },
+    {
+      "slug": "preparing-for-devfest",
+      "title": "How to Make the Most of Your DevFest Experience",
+      "excerpt": "Tips and tricks for attendees to maximize their learning and networking opportunities at DevFest Ireland 2025.",
+      "publishDate": "2024-12-01",
+      "readingTime": "3 min read",
+      "author": {
+        "name": "Lisa Murphy",
+        "role": "Community Manager",
+        "avatar": "LM",
+        "bio": "Lisa manages community engagement for DevFest Ireland and loves connecting developers."
+      },
+      "tags": ["tips", "networking", "attendees"],
+      "featured": false
+    }
+  ]
+}

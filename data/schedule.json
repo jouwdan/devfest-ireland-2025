@@ -1,0 +1,148 @@
+{
+  "schedule": [
+    {
+      "time": "9:00 AM",
+      "title": "Registration & Welcome Coffee",
+      "description": "Check-in, networking, and breakfast. Get your badge and swag bag!",
+      "type": "registration",
+      "duration": "60 min",
+      "location": "Main Lobby"
+    },
+    {
+      "time": "10:00 AM",
+      "title": "Opening Keynote",
+      "description": "Welcome to DevFest Ireland 2025 - The Future of Development",
+      "speaker": "Jane Smith",
+      "type": "keynote",
+      "duration": "30 min",
+      "location": "Main Auditorium"
+    },
+    {
+      "time": "10:30 AM",
+      "title": "Technical Sessions - Track 1 & 2",
+      "description": "Choose between AI/ML track or Web Development track",
+      "type": "session",
+      "duration": "45 min",
+      "sessions": [
+        {
+          "track": "Track 1",
+          "title": "The Future of AI in Web Development",
+          "speaker": "Jane Smith",
+          "location": "Room A"
+        },
+        {
+          "track": "Track 2",
+          "title": "Practical Machine Learning with TensorFlow",
+          "speaker": "James Murphy",
+          "location": "Room B"
+        }
+      ]
+    },
+    {
+      "time": "11:15 AM",
+      "title": "Coffee Break",
+      "description": "Networking break with refreshments",
+      "type": "break",
+      "duration": "15 min",
+      "location": "Exhibition Area"
+    },
+    {
+      "time": "11:30 AM",
+      "title": "Technical Sessions - Track 1 & 2",
+      "description": "Second round of parallel sessions",
+      "type": "session",
+      "duration": "45 min",
+      "sessions": [
+        {
+          "track": "Track 1",
+          "title": "Building Beautiful UIs with Flutter 3.0",
+          "speaker": "Michael Davis",
+          "location": "Room A"
+        },
+        {
+          "track": "Track 2",
+          "title": "Modern Web Performance Optimization",
+          "speaker": "David Wilson",
+          "location": "Room B"
+        }
+      ]
+    },
+    {
+      "time": "12:15 PM",
+      "title": "Lightning Talks",
+      "description": "Quick 5-minute presentations from community members",
+      "type": "lightning",
+      "duration": "15 min",
+      "location": "Main Auditorium"
+    },
+    {
+      "time": "12:30 PM",
+      "title": "Lunch & Networking",
+      "description": "Enjoy lunch and connect with fellow developers. Sponsor booths open.",
+      "type": "lunch",
+      "duration": "90 min",
+      "location": "Restaurant & Exhibition Area"
+    },
+    {
+      "time": "2:00 PM",
+      "title": "Workshops & Hands-on Labs",
+      "description": "Interactive learning sessions - choose your track",
+      "type": "workshop",
+      "duration": "90 min",
+      "sessions": [
+        {
+          "track": "Workshop 1",
+          "title": "Scaling Applications with Google Cloud Run",
+          "speaker": "Sarah O'Connor",
+          "location": "Lab Room 1"
+        },
+        {
+          "track": "Workshop 2",
+          "title": "GitHub Actions for Modern DevOps",
+          "speaker": "Emma Thompson",
+          "location": "Lab Room 2"
+        }
+      ]
+    },
+    {
+      "time": "3:30 PM",
+      "title": "Coffee Break",
+      "description": "Afternoon refreshments and networking",
+      "type": "break",
+      "duration": "15 min",
+      "location": "Exhibition Area"
+    },
+    {
+      "time": "3:45 PM",
+      "title": "Panel Discussion",
+      "description": "The Future of Development in Ireland",
+      "type": "panel",
+      "duration": "45 min",
+      "location": "Main Auditorium"
+    },
+    {
+      "time": "4:30 PM",
+      "title": "Community Showcase",
+      "description": "Local developer groups and projects presentation",
+      "type": "showcase",
+      "duration": "30 min",
+      "location": "Main Auditorium"
+    },
+    {
+      "time": "5:00 PM",
+      "title": "Closing Keynote & Wrap-up",
+      "description": "Thank you and what's next for the community",
+      "type": "closing",
+      "duration": "30 min",
+      "location": "Main Auditorium"
+    },
+    {
+      "time": "5:30 PM",
+      "title": "Networking Reception",
+      "description": "Continued networking with drinks and light refreshments",
+      "type": "networking",
+      "duration": "90 min",
+      "location": "Bar & Lounge Area"
+    }
+  ]
+}
