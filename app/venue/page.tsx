@@ -113,14 +113,18 @@ export default function VenuePage() {
                 </div>
 
                 <div className="mt-8 space-y-4">
-                  <Button className="bg-blue-600 hover:bg-blue-700 mr-4">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Get Directions
-                  </Button>
-                  <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 bg-transparent">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Hotel Website
-                  </Button>
+                  <Link href="https://maps.app.goo.gl/c6XKCEmnhVQ2JPBn7" target="_blank">
+                    <Button className="bg-blue-600 hover:bg-blue-700 mr-4">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Get Directions
+                    </Button>
+                  </Link>
+                  <Link href="https://www.midlandsparkhotel.com/" target="_blank">
+                    <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 bg-transparent">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Hotel Website
+                    </Button>
+                  </Link>
                 </div>
               </div>
 
