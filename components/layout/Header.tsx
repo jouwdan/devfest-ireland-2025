@@ -21,6 +21,7 @@ export default function Header({ currentPage }: HeaderProps) {
     { href: "/speakers", label: "Speakers" },
     { href: "/venue", label: "Venue" },
     { href: "/blog", label: "Blog" },
+    { href: "/sponsorship", label: "Sponsorship" },
   ]
 
   const isCurrentPage = (label: string) => {

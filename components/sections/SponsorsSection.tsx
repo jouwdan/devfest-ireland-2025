@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 interface Sponsor {
   id: string
@@ -120,7 +121,7 @@ export default function SponsorsSection({
         {/* Partners */}
         <div className="mb-8">
           <div className="text-center mb-8">
-            <Badge className="bg-blue-600 text-white px-4 py-2 text-lg mb-4">Partners</Badge>
+            <Badge className="bg-blue-600 text-white px-4 py-2 text-lg mb-4">Service Partners</Badge>
             <p className="text-gray-600">Providing services and support</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -145,10 +146,14 @@ export default function SponsorsSection({
         <div className="text-center">
           <p className="text-gray-600 mb-6">Interested in sponsoring or partnering with DevFest Ireland 2025?</p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button className="bg-blue-600 hover:bg-blue-700">Become a Sponsor</Button>
-            <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent">
-              Partnership Opportunities
-            </Button>
+            <Link href="/sponsorship">
+              <Button className="bg-blue-600 hover:bg-blue-700">Become a Sponsor</Button>
+            </Link>
+            <Link href="/sponsorship">
+              <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent">
+                Partnership Opportunities
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
