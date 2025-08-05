@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
+import Logo from "@/lib/Logo"
 
 interface HeaderProps {
   currentPage?: string
@@ -16,7 +17,7 @@ export default function Header({ currentPage }: HeaderProps) {
   const router = useRouter()
 
   const navItems = [
-    { href: "/#about", label: "About" },
+    { href: "/", label: "Home" },
     { href: "/schedule", label: "Schedule" },
     { href: "/speakers", label: "Speakers" },
     { href: "/venue", label: "Venue" },
@@ -60,12 +61,17 @@ export default function Header({ currentPage }: HeaderProps) {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold">
-              <span className="text-yellow-500">{`{`}</span>
-              <span className="text-gray-900">DevFest</span>
-              <span className="text-yellow-500">{`}`}</span>
+            <div className="flex gap-2 items-center">
+              <div className="w-[35px] h-[35px] pt-1.5">
+                <Logo />
+              </div>
+              <span className="text-2xl font-bold hidden lg:block px-1">
+                DevFest
+              </span>
             </div>
-            <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
+            <Badge
+              variant="outline"
+              className="bg-blue-50 text-blue-700 border-blue-200 hidden lg:block">
               Ireland 2025
             </Badge>
           </Link>
@@ -78,33 +84,40 @@ export default function Header({ currentPage }: HeaderProps) {
                   <button
                     onClick={() => handleNavClick(item.href, item.label)}
                     className={`transition-colors ${
-                      isCurrentPage(item.label) ? "text-blue-600 font-semibold" : "text-gray-600 hover:text-gray-900"
-                    }`}
-                  >
+                      isCurrentPage(item.label)
+                        ? "text-blue-600 font-semibold"
+                        : "text-gray-600 hover:text-gray-900"
+                    }`}>
                     {item.label}
                   </button>
                 ) : (
                   <Link
                     href={item.href}
                     className={`transition-colors ${
-                      isCurrentPage(item.label) ? "text-blue-600 font-semibold" : "text-gray-600 hover:text-gray-900"
-                    }`}
-                  >
+                      isCurrentPage(item.label)
+                        ? "text-blue-600 font-semibold"
+                        : "text-gray-600 hover:text-gray-900"
+                    }`}>
                     {item.label}
                   </Link>
                 )}
               </div>
             ))}
-            <Button className="bg-blue-600 hover:bg-blue-700">Register Now</Button>
+            <Button className="bg-blue-600 hover:bg-blue-700">
+              Register Now
+            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle mobile menu"
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6 text-gray-600" /> : <Menu className="w-6 h-6 text-gray-600" />}
+            aria-label="Toggle mobile menu">
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6 text-gray-600" />
+            ) : (
+              <Menu className="w-6 h-6 text-gray-600" />
+            )}
           </button>
         </div>
 
@@ -118,26 +131,30 @@ export default function Header({ currentPage }: HeaderProps) {
                     <button
                       onClick={() => handleNavClick(item.href, item.label)}
                       className={`py-2 transition-colors text-left w-full ${
-                        isCurrentPage(item.label) ? "text-blue-600 font-semibold" : "text-gray-600 hover:text-gray-900"
-                      }`}
-                    >
+                        isCurrentPage(item.label)
+                          ? "text-blue-600 font-semibold"
+                          : "text-gray-600 hover:text-gray-900"
+                      }`}>
                       {item.label}
                     </button>
                   ) : (
                     <Link
                       href={item.href}
                       className={`py-2 transition-colors block ${
-                        isCurrentPage(item.label) ? "text-blue-600 font-semibold" : "text-gray-600 hover:text-gray-900"
+                        isCurrentPage(item.label)
+                          ? "text-blue-600 font-semibold"
+                          : "text-gray-600 hover:text-gray-900"
                       }`}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
+                      onClick={() => setIsMobileMenuOpen(false)}>
                       {item.label}
                     </Link>
                   )}
                 </div>
               ))}
               <div className="pt-2">
-                <Button className="bg-blue-600 hover:bg-blue-700 w-full" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button
+                  className="bg-blue-600 hover:bg-blue-700 w-full"
+                  onClick={() => setIsMobileMenuOpen(false)}>
                   Register Now
                 </Button>
               </div>
@@ -146,5 +163,5 @@ export default function Header({ currentPage }: HeaderProps) {
         )}
       </div>
     </header>
-  )
+  );
 }
