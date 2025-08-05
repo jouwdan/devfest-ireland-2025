@@ -237,12 +237,6 @@ export default function VenuePage() {
                       <p key={index}>• {option}</p>
                     ))}
                   </div>
-                  <Button
-                    variant="outline"
-                    className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent w-full"
-                  >
-                    View All Options
-                  </Button>
                 </CardContent>
               </Card>
             </div>
@@ -255,22 +249,8 @@ export default function VenuePage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Ready to Join Us?</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button className="bg-blue-600 hover:bg-blue-700 px-8 py-3 text-lg">Register for Free</Button>
-            <Link href="/schedule">
-              <Button
-                variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent px-8 py-3 text-lg"
-              >
-                View Schedule
-              </Button>
-            </Link>
-            <Link href="/speakers">
-              <Button
-                variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent px-8 py-3 text-lg"
-              >
-                Meet Speakers
-              </Button>
+            <Link href="/register">
+              <Button className="bg-blue-600 hover:bg-blue-700 px-8 py-3 text-lg">Register for Free</Button>
             </Link>
           </div>
         </div>

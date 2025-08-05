@@ -57,13 +57,6 @@ export default function OrganizersSection({ organizers }: OrganizersSectionProps
             )
           })}
         </div>
-
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-6">Want to get involved with your local Google Developer Group?</p>
-          <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent">
-            Find Your Local GDG
-          </Button>
-        </div>
       </div>
     </section>
   )

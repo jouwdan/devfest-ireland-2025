@@ -101,17 +101,14 @@ export default function DevFestIreland2025() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button
-                size="lg"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
-                Register for Free
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-3 text-lg bg-transparent">
-                View Schedule
-              </Button>
+              <Link href="/register" target="_blank">
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
+                >
+                  Register for Free
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -284,7 +281,7 @@ export default function DevFestIreland2025() {
               </div>
             </div>
 
-            <div className="text-center mt-12">
+            {/* <div className="text-center mt-12">
               <Link href="/schedule">
                 <Button className="bg-blue-600 hover:bg-blue-700 mr-4">
                   View Full Schedule
@@ -297,7 +294,7 @@ export default function DevFestIreland2025() {
                   Venue Details
                 </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

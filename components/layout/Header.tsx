@@ -18,10 +18,10 @@ export default function Header({ currentPage }: HeaderProps) {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/schedule", label: "Schedule" },
-    { href: "/speakers", label: "Speakers" },
+    // { href: "/schedule", label: "Schedule" },
+    // { href: "/speakers", label: "Speakers" },
     { href: "/venue", label: "Venue" },
-    { href: "/blog", label: "Blog" },
+    // { href: "/blog", label: "Blog" },
     { href: "/sponsorship", label: "Sponsorship" },
   ]
 
