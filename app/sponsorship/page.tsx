@@ -80,38 +80,13 @@ const sponsorshipTiers = [
 
 const partnershipTypes = [
   {
-    name: "Venue Partner",
-    icon: MapPin,
-    color: "blue",
-    description: "Provide event space or facilities",
-    benefits: [
-      "Venue branding opportunities",
-      "Recognition as official venue partner",
-      "Logo placement on venue materials",
-      "Social media recognition",
-    ],
-  },
-  {
-    name: "Catering Partner",
-    icon: Utensils,
-    color: "green",
-    description: "Provide food and beverage services",
-    benefits: [
-      "Branded food stations",
-      "Menu co-branding opportunities",
-      "Recognition during meal times",
-      "Social media features",
-    ],
-  },
-  {
     name: "Technology Partner",
     icon: Wifi,
     color: "purple",
     description: "Provide technical services or infrastructure",
     benefits: [
+      "Logo on website",
       "Technical service recognition",
-      "Logo on tech-related materials",
-      "Speaking opportunity about your tech",
       "Developer community exposure",
     ],
   },
@@ -128,18 +103,6 @@ const partnershipTypes = [
     ],
   },
   {
-    name: "Community Partner",
-    icon: Heart,
-    color: "pink",
-    description: "Help with outreach and community engagement",
-    benefits: [
-      "Community recognition",
-      "Cross-promotional opportunities",
-      "Networking benefits",
-      "Shared audience growth",
-    ],
-  },
-  {
     name: "Service Partner",
     icon: Zap,
     color: "indigo",
@@ -151,7 +114,7 @@ const partnershipTypes = [
       "Industry thought leadership",
     ],
   },
-]
+];
 
 const whySponsor = [
   {

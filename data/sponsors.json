@@ -3,118 +3,22 @@
     {
       "id": "google-for-developers",
       "name": "Google for Developers",
-      "description": "Become a Gold Sponsor",
-      "logo": "GOLD"
-    },
-    {
-      "id": "gold-2",
-      "name": "Your Company Here",
-      "description": "Become a Gold Sponsor",
-      "logo": "GOLD"
-    },
-    {
-      "id": "gold-3",
-      "name": "Your Company Here",
-      "description": "Become a Gold Sponsor",
-      "logo": "GOLD"
+      "description": "Headline Sponsor",
+      "logo": "/images/gfd-logo.svg"
     }
   ],
   "silverSponsors": [
-    {
-      "id": "silver-1",
-      "name": "Your Company",
-      "description": "Silver Sponsor",
-      "logo": "SILVER"
-    },
-    {
-      "id": "silver-2",
-      "name": "Your Company",
-      "description": "Silver Sponsor",
-      "logo": "SILVER"
-    },
-    {
-      "id": "silver-3",
-      "name": "Your Company",
-      "description": "Silver Sponsor",
-      "logo": "SILVER"
-    },
-    {
-      "id": "silver-3",
-      "name": "Your Company",
-      "description": "Silver Sponsor",
-      "logo": "SILVER"
-    }
   ],
   "bronzeSponsors": [
-    {
-      "id": "bronze-1",
-      "name": "Company 1",
-      "description": "Bronze",
-      "logo": "BRONZE"
-    },
-    {
-      "id": "bronze-2",
-      "name": "Company 2",
-      "description": "Bronze",
-      "logo": "BRONZE"
-    },
-    {
-      "id": "bronze-3",
-      "name": "Company 3",
-      "description": "Bronze",
-      "logo": "BRONZE"
-    },
-    {
-      "id": "bronze-4",
-      "name": "Company 4",
-      "description": "Bronze",
-      "logo": "BRONZE"
-    },
-    {
-      "id": "bronze-5",
-      "name": "Company 5",
-      "description": "Bronze",
-      "logo": "BRONZE"
-    },
-    {
-      "id": "bronze-6",
-      "name": "Company 6",
-      "description": "Bronze",
-      "logo": "BRONZE"
-    }
   ],
   "partners": [
     {
-      "id": "media-partner",
-      "name": "Media Partner",
-      "description": "Event Coverage",
-      "logo": "MEDIA",
-      "type": "media",
+      "id": "teamwork",
+      "name": "Teamwork",
+      "description": "Collaboration Platform Partner",
+      "logo": "/images/teamwork-logo.png",
+      "type": "Collaboration Platform Partner",
       "color": "blue"
-    },
-    {
-      "id": "venue-partner",
-      "name": "Venue Partner",
-      "description": "Location Support",
-      "logo": "VENUE",
-      "type": "venue",
-      "color": "green"
-    },
-    {
-      "id": "tech-partner",
-      "name": "Tech Partner",
-      "description": "Platform Support",
-      "logo": "TECH",
-      "type": "tech",
-      "color": "purple"
-    },
-    {
-      "id": "catering-partner",
-      "name": "Catering Partner",
-      "description": "Food & Beverage",
-      "logo": "FOOD",
-      "type": "catering",
-      "color": "red"
     }
   ]
 }
