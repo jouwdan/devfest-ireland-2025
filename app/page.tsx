@@ -31,11 +31,15 @@ export default function DevFestIreland2025() {
             <span className="font-semibold">
               Call for Speakers is now open!
             </span>
-            <Button
-              size="sm"
-              className="bg-white text-green-600 hover:bg-gray-100 ml-2 px-4 py-1 text-sm font-semibold">
-              Submit Your Talk
-            </Button>
+            <Link
+              href="https://sessionize.com/devfest-ireland-2025/"
+              target="_blank">
+              <Button
+                size="sm"
+                className="bg-white text-green-600 hover:bg-gray-100 ml-2 px-4 py-1 text-sm font-semibold">
+                Submit Your Talk
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -137,8 +141,8 @@ export default function DevFestIreland2025() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Deep dives into the latest technologies, frameworks,
-                  and developer tools
+                  Deep dives into the latest technologies, frameworks, and
+                  developer tools
                 </CardDescription>
               </CardContent>
             </Card>
