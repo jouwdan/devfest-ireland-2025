@@ -106,9 +106,11 @@ export default function Header({ currentPage }: HeaderProps) {
                 )}
               </div>
             ))}
-            <Button className="bg-blue-600 hover:bg-blue-700">
-              Register Now
-            </Button>
+            <Link href="/register" target="_blank">
+              <Button className="bg-blue-600 hover:bg-blue-700">
+                Register Now
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -155,11 +157,13 @@ export default function Header({ currentPage }: HeaderProps) {
                 </div>
               ))}
               <div className="pt-2">
-                <Button
-                  className="bg-blue-600 hover:bg-blue-700 w-full"
-                  onClick={() => setIsMobileMenuOpen(false)}>
-                  Register Now
-                </Button>
+                <Link href="/register" target="_blank">
+                  <Button
+                    className="bg-blue-600 hover:bg-blue-700 w-full"
+                    onClick={() => setIsMobileMenuOpen(false)}>
+                    Register Now
+                  </Button>
+                </Link>
               </div>
             </nav>
           </div>
