@@ -56,6 +56,34 @@ export default function SponsorsSection({
           </p>
         </div>
 
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <Badge className="bg-green-600 text-white px-4 py-2 text-lg mb-4">
+              Headline Sponsor
+            </Badge>
+            <p className="text-gray-600">
+              Headline sponsor supporting DevFest Ireland
+            </p>
+          </div>
+          <div className="grid md:grid-cols1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
+            <Card className="p-8 gap-2 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-green-50 to-green-100 border-green-200">
+              <div className="rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Image
+                  src="/images/gfd-logo.svg"
+                  alt="Google for Developers"
+                  width={156}
+                  height={156}
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="font-semibold text-gray-900 text-lg">
+                Google for Developers
+              </h3>
+              <p className="text-sm text-gray-600">Headline sponsor supporting DevFest Ireland</p>
+            </Card>
+          </div>
+        </div>
+
         {/* Gold Sponsors */}
         {goldSponsors[0] && (
           <div className="mb-12">

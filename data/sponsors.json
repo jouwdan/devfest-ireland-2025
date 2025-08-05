@@ -1,11 +1,5 @@
 {
   "goldSponsors": [
-    {
-      "id": "google-for-developers",
-      "name": "Google for Developers",
-      "description": "Headline Sponsor",
-      "logo": "/images/gfd-logo.svg"
-    }
   ],
   "silverSponsors": [
   ],
