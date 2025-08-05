@@ -26,6 +26,9 @@ export default function Header({ currentPage }: HeaderProps) {
   ]
 
   const isCurrentPage = (label: string) => {
+    if (!currentPage && label === "Home") {
+      return true;
+    }
     return currentPage?.toLowerCase() === label.toLowerCase()
   }
 
