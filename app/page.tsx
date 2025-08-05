@@ -16,6 +16,9 @@ import ScrollToTopButton from "@/components/layout/ScrollToTopButton"
 import speakersData from "@/data/speakers.json"
 import sponsorsData from "@/data/sponsors.json"
 import organizersData from "@/data/organizers.json"
+import Logo from "@/lib/Logo"
+import CurlyBracketOpen from "@/lib/CurlyBracketOpen"
+import CurlyBracketClose from "@/lib/CurlyBracketClose"
 
 export default function DevFestIreland2025() {
   // Get featured speakers (first 3)
@@ -59,24 +62,20 @@ export default function DevFestIreland2025() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
+              <div className="w-1/6 h-1/6 mx-auto mb-4">
+                <Logo />
+              </div>
               <div className="inline-flex items-center space-x-4 mb-6">
-                <span className="text-6xl font-bold text-yellow-500">{`{`}</span>
+                <CurlyBracketOpen className="w-12 h-22 text-blue-600" />
                 <h1 className="text-6xl md:text-8xl font-bold text-gray-900">
                   DevFest
                 </h1>
-                <span className="text-6xl font-bold text-yellow-500">{`}`}</span>
+                <CurlyBracketClose className="w-12 h-22 text-blue-600" />
               </div>
               <div className="flex items-center justify-center space-x-4 mb-6">
-                <Badge className="bg-blue-600 text-white px-4 py-2 text-lg">
+                <Badge className="bg-green-600 text-white px-4 py-2 text-2xl">
                   Ireland 2025
                 </Badge>
-                <div className="text-4xl">✦</div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-6 h-6 bg-blue-500 rounded transform rotate-45"></div>
-                  <div className="w-6 h-6 bg-red-500 rounded-full"></div>
-                  <div className="w-6 h-6 bg-green-500 rounded transform rotate-45"></div>
-                  <div className="w-6 h-6 bg-yellow-500 rounded-full"></div>
-                </div>
               </div>
             </div>
 
