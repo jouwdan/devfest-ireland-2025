@@ -25,31 +25,22 @@ export default function Footer() {
               <Link href="/" className="block text-gray-400 hover:text-white transition-colors">
                 Home
               </Link>
-              <Link href="/speakers" className="block text-gray-400 hover:text-white transition-colors">
-                Speakers
-              </Link>
-              <Link href="/schedule" className="block text-gray-400 hover:text-white transition-colors">
-                Schedule
-              </Link>
               <Link href="/venue" className="block text-gray-400 hover:text-white transition-colors">
                 Venue
               </Link>
-              <Link href="/blog" className="block text-gray-400 hover:text-white transition-colors">
-                Blog
+              <Link href="/sponsorship" className="block text-gray-400 hover:text-white transition-colors">
+                Sponsorship
               </Link>
             </div>
           </div>
           <div>
             <h3 className="font-semibold mb-4">Connect</h3>
             <div className="space-y-2">
-              <Link href="#" className="block text-gray-400 hover:text-white transition-colors">
-                Twitter
-              </Link>
-              <Link href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <Link href="https://linkedin.com/company/gdgportlaoise" className="block text-gray-400 hover:text-white transition-colors">
                 LinkedIn
               </Link>
-              <Link href="#" className="block text-gray-400 hover:text-white transition-colors">
-                Meetup
+              <Link href="/register" className="block text-gray-400 hover:text-white transition-colors">
+                Register
               </Link>
             </div>
           </div>
