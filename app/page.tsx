@@ -310,17 +310,13 @@ export default function DevFestIreland2025() {
             now for free and be part of the community!
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button
-              size="lg"
-              className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
-              Register for Free
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg bg-transparent">
-              Follow Updates
-            </Button>
+            <Link href="/register" target="_blank">
+              <Button
+                size="lg"
+                className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+                Register for Free
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
