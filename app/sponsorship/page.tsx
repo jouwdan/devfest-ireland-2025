@@ -40,6 +40,7 @@ const sponsorshipTiers = [
     badgeColor: "bg-amber-600",
     benefits: [
       "Logo on website",
+      "Exhibitor banner at the event",
       "Verbal recognition in opening & closing remarks",
       "Logo on DevFest Ireland 2025 printed media",
     ],
@@ -122,7 +123,7 @@ const whySponsor = [
   {
     icon: Users,
     title: "Reach Tech Talent",
-    description: "Connect with 300+ developers, engineers, and tech professionals from across Ireland",
+    description: "Connect with 200+ developers, engineers, and tech professionals from across Ireland",
   },
   {
     icon: Globe,
