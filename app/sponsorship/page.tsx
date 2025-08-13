@@ -64,7 +64,7 @@ const sponsorshipTiers = [
   {
     name: "Gold",
     cost: "€2,000",
-    maxSlots: 2,
+    maxSlots: 3,
     color: "yellow",
     bgGradient: "from-yellow-50 to-yellow-100",
     borderColor: "border-yellow-200",
