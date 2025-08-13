@@ -225,7 +225,9 @@ export default function VenuePage() {
                       <strong>Book by:</strong> {venueData.venue.accommodation.venue.deadline}
                     </p>
                   </div>
-                  <Button className="bg-green-600 hover:bg-green-700 w-full">Book Special Rate</Button>
+                  <Link href="https://secure.midlandsparkhotel.com/convert/site/Midlands%20Park%20Hotel/en/index.php?av=promo&fw_submitted=1&promotionCode=DEVFEST&checkin=2025-12-6&nights=1" target="_blank">
+                    <Button className="bg-green-600 hover:bg-green-700 w-full">Book Special Rate</Button>
+                  </Link>
                 </CardContent>
               </Card>
 
