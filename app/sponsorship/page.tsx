@@ -167,7 +167,7 @@ const whyPartner = [
 
 const eventStats = [
   { number: "200+", label: "Expected Attendees" },
-  { number: "10+", label: "Technical Sessions" },
+  { number: "12+", label: "Technical Sessions" },
   { number: "8", label: "Hours of Networking" },
   { number: "100%", label: "Free for Attendees" },
 ]
