@@ -27,7 +27,7 @@ export default function DevFestIreland2025() {
   return (
     <div className="min-h-screen bg-white">
       {/* Call for Speakers Banner */}
-      <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-3">
+      {/* <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-3">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center space-x-3 text-center">
             <Megaphone className="w-5 h-5" />
@@ -45,7 +45,7 @@ export default function DevFestIreland2025() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Header />
 
