@@ -50,7 +50,7 @@ export default function SpeakersPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Want to Speak at DevFest?</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -68,7 +68,7 @@ export default function SpeakersPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
       <ScrollToTopButton />
