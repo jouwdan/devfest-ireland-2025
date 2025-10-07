@@ -5,6 +5,13 @@
       "name": "LOETB",
       "description": "Laois & Offaly Education and Training Board",
       "logo": "/images/loetb.jpg"
+    },
+
+    {
+      "id": "FRS",
+      "name": "FRS Recruitment",
+      "description": "Recruitment Sponsor",
+      "logo": "/images/frs.png"
     }
   ],
   "silverSponsors": [
