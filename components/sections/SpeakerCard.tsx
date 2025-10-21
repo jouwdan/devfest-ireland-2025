@@ -10,7 +10,6 @@ interface Speaker {
   expertise: string
   bio: string
   session: string
-  track: string
   time: string
   color: string
   initials: string
@@ -63,17 +62,9 @@ export default function SpeakerCard({ speaker, showSession = true }: SpeakerCard
                 <span>{speaker.time}</span>
               </div>
             </div>
-            <Badge variant="outline" className="mt-2 text-xs">
-              {speaker.track}
-            </Badge>
           </div>
         )}
 
-        {!showSession && (
-          <Badge variant="outline" className="text-xs">
-            {speaker.track}
-          </Badge>
-        )}
       </CardContent>
     </Card>
   )

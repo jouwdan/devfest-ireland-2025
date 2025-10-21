@@ -22,7 +22,7 @@ import CurlyBracketClose from "@/lib/CurlyBracketClose"
 
 export default function DevFestIreland2025() {
   // Get featured speakers (first 3)
-  const featuredSpeakers = speakersData.speakers.slice(0, 3)
+  const featuredSpeakers = speakersData.speakers.slice(0, 4)
 
   return (
     <div className="min-h-screen bg-white">
@@ -192,18 +192,18 @@ export default function DevFestIreland2025() {
       </section>
 
       {/* Keynote Speakers */}
-      {/* <section className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Keynote Speakers
+              Speakers
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Learn from industry leaders and Google Developer Experts
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {featuredSpeakers.map((speaker) => (
               <SpeakerCard
                 key={speaker.id}
@@ -215,16 +215,16 @@ export default function DevFestIreland2025() {
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">
-              Meet all our amazing speakers and see their full session details
+              More speakers to be announced soon!
             </p>
-            <Link href="/speakers">
+            {/* <Link href="/speakers">
               <Button className="bg-blue-600 hover:bg-blue-700">
                 View All Speakers
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
-      </section> */}
+      </section>
 
       <OrganizersSection organizers={organizersData.organizers} />
 

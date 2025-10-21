@@ -1,82 +1,52 @@
 {
   "speakers": [
     {
-      "id": "jane-smith",
-      "name": "Jane Smith",
-      "title": "Senior Software Engineer",
-      "company": "Google",
-      "expertise": "Google Developer Expert",
-      "bio": "Jane is a Senior Software Engineer at Google with over 8 years of experience in AI/ML and cloud technologies. She leads the development of machine learning infrastructure and has contributed to several open-source projects.",
-      "session": "The Future of AI in Web Development",
-      "track": "AI & Machine Learning",
+      "id": "rowdy-rabouw",
+      "name": "Rowdy Rabouw",
+      "title": "Senior DevOps Engineer",
+      "company": "Nationale-Nederlanden",
+      "expertise": "Google Developer Expert in Web Technologies",
+      "bio": "Rowdy Rabouw is a Google Developer Expert in Web Technologies with over 25 years of experience in HTML, CSS and JavaScript. Currently, he works as a Front-End-Focused Senior DevOps Engineer on Vue, Node and NestJS projects, paying special attention to usability and accessibility. Rowdy loves his electronic drum kit and dabbles creating music on his laptop.",
+      "session": "One Small Model for Chrome, One Giant Leap for Built in AI",
       "time": "10:30 AM - 11:15 AM",
       "color": "blue",
-      "initials": "JS"
+      "initials": "RR"
     },
     {
-      "id": "michael-davis",
-      "name": "Michael Davis",
-      "title": "Lead Mobile Developer",
-      "company": "Flutter Team",
-      "expertise": "Flutter Expert",
-      "bio": "Michael has been working with Flutter since its early days and has built mobile apps used by millions. He's passionate about cross-platform development and developer experience.",
+      "id": "patty-ocallaghan",
+      "name": "Patty O'Callaghan",
+      "title": "Technical Director & Head of AI (Architecture & Engineering Group)",
+      "company": "Charles River Laboratories",
+      "expertise": "Google Developer Expert in Cloud & AI",
+      "bio": "Patty O’Callaghan is a seasoned technology leader and AI strategist. She is a member of the Google Developer Advisory Board, A frequent keynote speaker and advocate for diversity in tech. Patty is passionate about mentorship, AI ethics, and empowering women in technology. She has been recognized as a Most Active Speaker (2023 & 2024) on Sessionize and was twice nominated for Inspirational Woman of the Year at the Scotland Women in Technology Awards.",
       "session": "Building Beautiful UIs with Flutter 3.0",
-      "track": "Mobile Development",
       "time": "11:30 AM - 12:15 PM",
       "color": "green",
-      "initials": "MD"
+      "initials": "PO"
     },
     {
-      "id": "sarah-oconnor",
-      "name": "Sarah O'Connor",
-      "title": "Cloud Solutions Architect",
-      "company": "Google Cloud",
-      "expertise": "Cloud Architect",
-      "bio": "Sarah helps enterprises migrate to and scale on Google Cloud Platform. She specializes in containerization, microservices, and DevOps practices.",
+      "id": "vadym-pinkchuk",
+      "name": "Vadym Pinchuk",
+      "title": "Software Engineer",
+      "company": "Sky",
+      "expertise": "Google Developer Expert in Flutter & Dart",
+      "bio": "Vadym is a London-based mobile engineer and GDE for Flutter & Dart with 11+ years’ experience across Android and cross-platform development. At Sky, he builds platform-agnostic solutions that deliver polished, high-impact user experiences; previously at Instagram (Meta) he shipped creator-focused features at scale and contributed to architecture and design-system initiatives. A regular on the conference circuit (Fluttercon, droidcon, FlutterConf LATAM, DevCon), Vadym is an active community mentor (GDG Academy) and a UK Global Talent Visa holder.",
       "session": "Scaling Applications with Google Cloud Run",
-      "track": "Cloud & Infrastructure",
       "time": "2:00 PM - 2:45 PM",
       "color": "purple",
-      "initials": "SO"
+      "initials": "VP"
     },
     {
-      "id": "david-wilson",
-      "name": "David Wilson",
-      "title": "Senior Frontend Engineer",
-      "company": "Stripe",
-      "expertise": "Web Technologies Expert",
-      "bio": "David is a frontend engineering leader with expertise in modern web frameworks, performance optimization, and developer tooling.",
+      "id": "vasudev-maduri",
+      "name": "Vasudev Maduri",
+      "title": "Staff Data Engineer",
+      "company": "Admiral Group",
+      "expertise": "Google Developer Expert in Cloud & AI",
+      "bio": "Vasudev Maduri is a GDE (Cloud & AI) and Staff Data Engineer at Admiral Group. He builds large-scale data + ML platforms on GCP, speaks globally on architecture and MLOps, and mentors the community through GDE Academy and Google for Startups Accelerator.",
       "session": "Modern Web Performance Optimization",
-      "track": "Web Development",
       "time": "3:00 PM - 3:45 PM",
       "color": "red",
-      "initials": "DW"
-    },
-    {
-      "id": "emma-thompson",
-      "name": "Emma Thompson",
-      "title": "DevOps Engineer",
-      "company": "GitHub",
-      "expertise": "DevOps & CI/CD",
-      "bio": "Emma specializes in building robust CI/CD pipelines and infrastructure automation. She's passionate about developer productivity and security.",
-      "session": "GitHub Actions for Modern DevOps",
-      "track": "DevOps & Tools",
-      "time": "4:00 PM - 4:45 PM",
-      "color": "yellow",
-      "initials": "ET"
-    },
-    {
-      "id": "james-murphy",
-      "name": "James Murphy",
-      "title": "Data Scientist",
-      "company": "DeepMind",
-      "expertise": "Machine Learning Research",
-      "bio": "James works on cutting-edge AI research at DeepMind, focusing on reinforcement learning and neural networks for real-world applications.",
-      "session": "Practical Machine Learning with TensorFlow",
-      "track": "AI & Machine Learning",
-      "time": "10:30 AM - 11:15 AM",
-      "color": "indigo",
-      "initials": "JM"
+      "initials": "VM"
     }
   ]
 }
