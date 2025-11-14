@@ -65,7 +65,7 @@ export default function SponsorsSection({
               Headline sponsor supporting DevFest Ireland
             </p>
           </div>
-          <div className="grid md:grid-cols1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
             <Card className="p-8 gap-2 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-green-50 to-green-100 border-green-200">
               <div className="rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Image
@@ -74,6 +74,7 @@ export default function SponsorsSection({
                   width={156}
                   height={156}
                   className="object-contain"
+                  loading="eager"
                 />
               </div>
               <h3 className="font-semibold text-gray-900 text-lg">
@@ -102,11 +103,12 @@ export default function SponsorsSection({
                   className="p-8 gap-2 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-yellow-50 to-yellow-100 border-yellow-200">
                   <div className="w-24 h-24 rounded-lg flex items-center justify-center mx-auto mb-4">
                     <Image
-                      src={sponsor.logo}
+                      src={sponsor.logo || "/placeholder.svg"}
                       alt={sponsor.name}
                       width={96}
                       height={96}
                       className="object-contain"
+                      loading="eager"
                     />
                   </div>
                   <h3 className="font-semibold text-gray-900 text-lg">
@@ -137,11 +139,12 @@ export default function SponsorsSection({
                   className="p-6 gap-2 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200">
                   <div className="w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <Image
-                      src={sponsor.logo}
+                      src={sponsor.logo || "/placeholder.svg"}
                       alt={sponsor.name}
                       width={64}
                       height={64}
                       className="object-contain"
+                      loading="eager"
                     />
                   </div>
                   <h3 className="font-semibold text-gray-900 text-lg">
@@ -170,11 +173,12 @@ export default function SponsorsSection({
                   className="p-4 gap-2 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200">
                   <div className="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-2">
                     <Image
-                      src={sponsor.logo}
+                      src={sponsor.logo || "/placeholder.svg"}
                       alt={sponsor.name}
                       width={64}
                       height={64}
                       className="object-contain"
+                      loading="eager"
                     />
                   </div>
                   <h3 className="font-semibold text-gray-900 text-lg">
@@ -208,11 +212,12 @@ export default function SponsorsSection({
                     <div
                       className={`w-16 h-16 ${iconBgClass} rounded-lg flex items-center justify-center mx-auto mb-3`}>
                       <Image
-                        src={partner.logo}
+                        src={partner.logo || "/placeholder.svg"}
                         alt={partner.name}
                         width={64}
                         height={64}
                         className="object-contain"
+                        loading="eager"
                       />
                     </div>
                     <h3 className="font-semibold text-lg text-gray-900">
