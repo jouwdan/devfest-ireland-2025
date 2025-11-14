@@ -3,9 +3,9 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Menu, X } from "lucide-react"
+import { Menu, X } from 'lucide-react'
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { useRouter } from 'next/navigation'
 import Logo from "@/lib/Logo"
 
 interface HeaderProps {
@@ -18,7 +18,7 @@ export default function Header({ currentPage }: HeaderProps) {
 
   const navItems = [
     { href: "/", label: "Home" },
-    // { href: "/schedule", label: "Schedule" },
+    { href: "/schedule", label: "Schedule" },
     // { href: "/speakers", label: "Speakers" },
     { href: "/venue", label: "Venue" },
     // { href: "/blog", label: "Blog" },

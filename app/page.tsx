@@ -3,17 +3,16 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CalendarDays, MapPin, Clock, Users, Code, Lightbulb, Coffee, Megaphone } from "lucide-react"
+import { CalendarDays, MapPin, Clock, Users, Code, Lightbulb, Coffee, Megaphone } from 'lucide-react'
 import Link from "next/link"
 import Header from "@/components/layout/Header"
 import Footer from "@/components/layout/Footer"
-import SpeakerCard from "@/components/sections/SpeakerCard"
+import SessionizeSpeakerWall from "@/components/sections/SessionizeSpeakerWall"
 import SponsorsSection from "@/components/sections/SponsorsSection"
 import OrganizersSection from "@/components/sections/OrganizersSection"
 import ScrollToTopButton from "@/components/layout/ScrollToTopButton"
 
 // Import data
-import speakersData from "@/data/speakers.json"
 import sponsorsData from "@/data/sponsors.json"
 import organizersData from "@/data/organizers.json"
 import Logo from "@/lib/Logo"
@@ -22,7 +21,7 @@ import CurlyBracketClose from "@/lib/CurlyBracketClose"
 
 export default function DevFestIreland2025() {
   // Get featured speakers (first 3)
-  const featuredSpeakers = speakersData.speakers.slice(0, 4)
+  // const featuredSpeakers = speakersData.speakers.slice(0, 4)
 
   return (
     <div className="min-h-screen bg-white">
@@ -203,15 +202,7 @@ export default function DevFestIreland2025() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {featuredSpeakers.map((speaker) => (
-              <SpeakerCard
-                key={speaker.id}
-                speaker={speaker}
-                showSession={false}
-              />
-            ))}
-          </div>
+          <SessionizeSpeakerWall />
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">
