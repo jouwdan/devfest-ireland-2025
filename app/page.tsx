@@ -204,16 +204,11 @@ export default function DevFestIreland2025() {
 
           <SessionizeSpeakerWall />
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">
               More speakers to be announced soon!
             </p>
-            {/* <Link href="/speakers">
-              <Button className="bg-blue-600 hover:bg-blue-700">
-                View All Speakers
-              </Button>
-            </Link> */}
-          </div>
+          </div> */}
         </div>
       </section>
 

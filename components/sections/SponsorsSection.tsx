@@ -56,185 +56,169 @@ export default function SponsorsSection({
           </p>
         </div>
 
-        <div className="mb-12">
-          <div className="text-center mb-8">
-            <Badge className="bg-green-600 text-white px-4 py-2 text-lg mb-4">
+        <div className="space-y-12 max-w-6xl mx-auto">
+          {/* Headline Sponsor - Google */}
+          <div className="text-center">
+            <Badge className="bg-green-600 text-white px-4 py-2 text-lg mb-6">
               Headline Sponsor
             </Badge>
-            <p className="text-gray-600">
-              Headline sponsor supporting DevFest Ireland
-            </p>
-          </div>
-          <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto">
-            <Card className="p-8 gap-2 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-green-50 to-green-100 border-green-200">
-              <div className="rounded-lg flex items-center justify-center mx-auto mb-4">
+            <Card className="p-12 hover:shadow-lg transition-shadow bg-gradient-to-br from-green-50 to-green-100 border-green-200">
+              <div className="flex items-center justify-center">
                 <Image
                   src="/images/gfd-logo.svg"
                   alt="Google for Developers"
-                  width={156}
-                  height={156}
+                  width={300}
+                  height={300}
                   className="object-contain"
                   loading="eager"
                 />
               </div>
-              <h3 className="font-semibold text-gray-900 text-lg">
-                Google for Developers
-              </h3>
-              <p className="text-sm text-gray-600">Headline sponsor supporting DevFest Ireland</p>
             </Card>
           </div>
-        </div>
 
-        {/* Gold Sponsors */}
-        {goldSponsors[0] && (
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <Badge className="bg-yellow-500 text-white px-4 py-2 text-lg mb-4">
-                Gold Sponsors
-              </Badge>
-              <p className="text-gray-600">
-                Premier sponsors supporting DevFest Ireland
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {goldSponsors.map((sponsor) => (
-                <Card
-                  key={sponsor.id}
-                  className="p-8 gap-2 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-yellow-50 to-yellow-100 border-yellow-200">
-                  <div className="w-24 h-24 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <Image
-                      src={sponsor.logo || "/placeholder.svg"}
-                      alt={sponsor.name}
-                      width={96}
-                      height={96}
-                      className="object-contain"
-                      loading="eager"
-                    />
-                  </div>
-                  <h3 className="font-semibold text-gray-900 text-lg">
-                    {sponsor.name}
-                  </h3>
-                  <p className="text-sm text-gray-600">{sponsor.description}</p>
-                </Card>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Silver Sponsors */}
-        {silverSponsors[0] && (
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <Badge className="bg-gray-500 text-white px-4 py-2 text-lg mb-4">
-                Silver Sponsors
-              </Badge>
-              <p className="text-gray-600">
-                Supporting the developer community
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {silverSponsors.map((sponsor) => (
-                <Card
-                  key={sponsor.id}
-                  className="p-6 gap-2 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200">
-                  <div className="w-16 h-16 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <Image
-                      src={sponsor.logo || "/placeholder.svg"}
-                      alt={sponsor.name}
-                      width={64}
-                      height={64}
-                      className="object-contain"
-                      loading="eager"
-                    />
-                  </div>
-                  <h3 className="font-semibold text-gray-900 text-lg">
-                    {sponsor.name}
-                  </h3>
-                  <p className="text-xs text-gray-600">{sponsor.description}</p>
-                </Card>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Bronze Sponsors */}
-        {bronzeSponsors[0] && (
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <Badge className="bg-amber-600 text-white px-4 py-2 text-lg mb-4">
-                Bronze Sponsors
-              </Badge>
-              <p className="text-gray-600">Community supporters</p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
-              {bronzeSponsors.map((sponsor) => (
-                <Card
-                  key={sponsor.id}
-                  className="p-4 gap-2 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200">
-                  <div className="w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-2">
-                    <Image
-                      src={sponsor.logo || "/placeholder.svg"}
-                      alt={sponsor.name}
-                      width={64}
-                      height={64}
-                      className="object-contain"
-                      loading="eager"
-                    />
-                  </div>
-                  <h3 className="font-semibold text-gray-900 text-lg">
-                    {sponsor.name}
-                  </h3>
-                  <p className="text-xs text-gray-600">{sponsor.description}</p>
-                </Card>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Partners */}
-        {partners[0] && (
-          <div className="mb-8">
-            <div className="text-center mb-8">
-              <Badge className="bg-blue-600 text-white px-4 py-2 text-lg mb-4">
-                Partners
-              </Badge>
-              <p className="text-gray-600">Providing services and support</p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {partners.map((partner) => {
-                const [bgClasses, , iconBgClass] = getPartnerColorClasses(
-                  partner.color
-                ).split(" ");
-                return (
+          {goldSponsors[0] && (
+            <div>
+              <div className="text-center mb-6">
+                <Badge className="bg-yellow-500 text-white px-4 py-2 text-lg">
+                  Gold Sponsors
+                </Badge>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                {goldSponsors.map((sponsor) => (
                   <Card
-                    key={partner.id}
-                    className={`p-6 text-center hover:shadow-lg transition-shadow bg-gradient-to-br ${bgClasses} gap-2`}>
-                    <div
-                      className={`w-16 h-16 ${iconBgClass} rounded-lg flex items-center justify-center mx-auto mb-3`}>
+                    key={sponsor.id}
+                    className="p-8 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-yellow-50 to-yellow-100 border-yellow-200"
+                  >
+                    <div className="flex items-center justify-center mb-4">
                       <Image
-                        src={partner.logo || "/placeholder.svg"}
-                        alt={partner.name}
-                        width={64}
-                        height={64}
+                        src={sponsor.logo || "/placeholder.svg"}
+                        alt={sponsor.name}
+                        width={120}
+                        height={120}
                         className="object-contain"
                         loading="eager"
                       />
                     </div>
-                    <h3 className="font-semibold text-lg text-gray-900">
-                      {partner.name}
+                    <h3 className="font-semibold text-gray-900 text-lg">
+                      {sponsor.name}
                     </h3>
-                    <p className="text-xs text-gray-600">
-                      {partner.description}
+                    <p className="text-sm text-gray-600 mt-2">
+                      {sponsor.description}
                     </p>
                   </Card>
-                );
-              })}
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        <div className="text-center">
-          <p className="text-gray-600 mb-6">
+          {/* Silver Sponsors */}
+          {silverSponsors[0] && (
+            <div>
+              <div className="text-center mb-6">
+                <Badge className="bg-gray-500 text-white px-4 py-2 text-lg">
+                  Silver Sponsors
+                </Badge>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {silverSponsors.map((sponsor) => (
+                  <Card
+                    key={sponsor.id}
+                    className="p-6 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200"
+                  >
+                    <div className="flex items-center justify-center mb-3">
+                      <Image
+                        src={sponsor.logo || "/placeholder.svg"}
+                        alt={sponsor.name}
+                        width={80}
+                        height={80}
+                        className="object-contain"
+                        loading="eager"
+                      />
+                    </div>
+                    <h3 className="font-semibold text-gray-900 text-sm">
+                      {sponsor.name}
+                    </h3>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Bronze Sponsors */}
+            {bronzeSponsors[0] && (
+              <div>
+                <div className="text-center mb-6">
+                  <Badge className="bg-amber-600 text-white px-3 py-1.5">
+                    Bronze Sponsors
+                  </Badge>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  {bronzeSponsors.map((sponsor) => (
+                    <Card
+                      key={sponsor.id}
+                      className="p-4 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200"
+                    >
+                      <div className="flex items-center justify-center mb-2">
+                        <Image
+                          src={sponsor.logo || "/placeholder.svg"}
+                          alt={sponsor.name}
+                          width={60}
+                          height={60}
+                          className="object-contain"
+                          loading="eager"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-gray-900 text-sm">
+                        {sponsor.name}
+                      </h3>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Partners */}
+            {partners[0] && (
+              <div>
+                <div className="text-center mb-6">
+                  <Badge className="bg-blue-600 text-white px-3 py-1.5">
+                    Service Partners
+                  </Badge>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  {partners.map((partner) => {
+                    const [bgClasses, , iconBgClass] =
+                      getPartnerColorClasses(partner.color).split(" ");
+                    return (
+                      <Card
+                        key={partner.id}
+                        className={`p-4 text-center hover:shadow-lg transition-shadow bg-gradient-to-br ${bgClasses}`}
+                      >
+                        <div className="flex items-center justify-center mb-2">
+                          <Image
+                            src={partner.logo || "/placeholder.svg"}
+                            alt={partner.name}
+                            width={60}
+                            height={60}
+                            className="object-contain"
+                            loading="eager"
+                          />
+                        </div>
+                        <h3 className="font-semibold text-gray-900 text-sm">
+                          {partner.name}
+                        </h3>
+                      </Card>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <p className="text-gray-600 mb-4">
             Interested in sponsoring or partnering with DevFest Ireland 2025?
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -246,7 +230,8 @@ export default function SponsorsSection({
             <Link href="/sponsorship">
               <Button
                 variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent">
+                className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
+              >
                 Partnership Opportunities
               </Button>
             </Link>
