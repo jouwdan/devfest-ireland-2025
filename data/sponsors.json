@@ -4,24 +4,32 @@
       "id": "LOETB",
       "name": "LOETB",
       "description": "Laois & Offaly Education and Training Board",
-      "logo": "/images/loetb-logo.png"
+      "logo": "/images/loetb-logo.png",
+      "url": "https://loetb.ie"
     },
-
     {
       "id": "FRS",
       "name": "FRS Recruitment",
       "description": "Recruitment Sponsor",
-      "logo": "/images/frs.png"
+      "logo": "/images/frs.png",
+      "url": "https://frsrecruitment.com"
     }
   ],
-  "silverSponsors": [
-  ],
+  "silverSponsors": [],
   "bronzeSponsors": [
     {
       "id": "v0",
       "name": "v0 by Vercel",
       "description": "Start building with a single prompt. No coding needed.",
-      "logo": "/images/v0-logo-light.png"
+      "logo": "/images/v0-logo-light.png",
+      "url": "https://v0.app"
+    },
+    {
+      "id": "propelor-bic",
+      "name": "Propelor BIC",
+      "description": "Empowering Entrepreneurs",
+      "logo": "/images/sponsors/propelor-bic.png",
+      "url": "https://propelorbic.ie"
     }
   ],
   "partners": [
@@ -31,7 +39,8 @@
       "description": "Collaboration Platform Partner",
       "logo": "/images/teamwork-logo.png",
       "type": "Collaboration Platform Partner",
-      "color": "blue"
+      "color": "blue",
+      "url": "https://teamwork.com"
     }
   ]
 }

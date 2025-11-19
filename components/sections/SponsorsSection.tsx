@@ -9,6 +9,7 @@ interface Sponsor {
   name: string
   description: string
   logo: string
+  url?: string
 }
 
 interface Partner {
@@ -18,6 +19,7 @@ interface Partner {
   logo: string
   type: string
   color: string
+  url?: string
 }
 
 interface SponsorsSectionProps {
@@ -62,18 +64,20 @@ export default function SponsorsSection({
             <Badge className="bg-green-600 text-white px-4 py-2 text-lg mb-6">
               Headline Sponsor
             </Badge>
-            <Card className="p-12 hover:shadow-lg transition-shadow bg-gradient-to-br from-green-50 to-green-100 border-green-200">
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/images/gfd-logo.svg"
-                  alt="Google for Developers"
-                  width={300}
-                  height={300}
-                  className="object-contain"
-                  loading="eager"
-                />
-              </div>
-            </Card>
+            <Link href="https://gdg.community.dev" target="_blank" rel="noopener noreferrer">
+              <Card className="p-12 hover:shadow-lg transition-shadow bg-gradient-to-br from-green-50 to-green-100 border-green-200 cursor-pointer">
+                <div className="flex items-center justify-center">
+                  <Image
+                    src="/images/gfd-logo.svg"
+                    alt="Google for Developers"
+                    width={300}
+                    height={300}
+                    className="object-contain"
+                    loading="eager"
+                  />
+                </div>
+              </Card>
+            </Link>
           </div>
 
           {goldSponsors[0] && (
@@ -85,27 +89,32 @@ export default function SponsorsSection({
               </div>
               <div className="grid md:grid-cols-2 gap-6">
                 {goldSponsors.map((sponsor) => (
-                  <Card
+                  <Link
                     key={sponsor.id}
-                    className="p-8 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-yellow-50 to-yellow-100 border-yellow-200"
+                    href={sponsor.url || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={!sponsor.url ? "pointer-events-none" : ""}
                   >
-                    <div className="flex items-center justify-center mb-4">
-                      <Image
-                        src={sponsor.logo || "/placeholder.svg"}
-                        alt={sponsor.name}
-                        width={120}
-                        height={120}
-                        className="object-contain"
-                        loading="eager"
-                      />
-                    </div>
-                    <h3 className="font-semibold text-gray-900 text-lg">
-                      {sponsor.name}
-                    </h3>
-                    <p className="text-sm text-gray-600 mt-2">
-                      {sponsor.description}
-                    </p>
-                  </Card>
+                    <Card className="p-8 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-yellow-50 to-yellow-100 border-yellow-200 h-full cursor-pointer">
+                      <div className="flex items-center justify-center mb-4">
+                        <Image
+                          src={sponsor.logo || "/placeholder.svg"}
+                          alt={sponsor.name}
+                          width={120}
+                          height={120}
+                          className="object-contain"
+                          loading="eager"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-gray-900 text-lg">
+                        {sponsor.name}
+                      </h3>
+                      <p className="text-sm text-gray-600 mt-2">
+                        {sponsor.description}
+                      </p>
+                    </Card>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -121,24 +130,29 @@ export default function SponsorsSection({
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {silverSponsors.map((sponsor) => (
-                  <Card
+                  <Link
                     key={sponsor.id}
-                    className="p-6 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200"
+                    href={sponsor.url || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={!sponsor.url ? "pointer-events-none" : ""}
                   >
-                    <div className="flex items-center justify-center mb-3">
-                      <Image
-                        src={sponsor.logo || "/placeholder.svg"}
-                        alt={sponsor.name}
-                        width={80}
-                        height={80}
-                        className="object-contain"
-                        loading="eager"
-                      />
-                    </div>
-                    <h3 className="font-semibold text-gray-900 text-sm">
-                      {sponsor.name}
-                    </h3>
-                  </Card>
+                    <Card className="p-6 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200 h-full cursor-pointer">
+                      <div className="flex items-center justify-center mb-3">
+                        <Image
+                          src={sponsor.logo || "/placeholder.svg"}
+                          alt={sponsor.name}
+                          width={80}
+                          height={80}
+                          className="object-contain"
+                          loading="eager"
+                        />
+                      </div>
+                      <h3 className="font-semibold text-gray-900 text-sm">
+                        {sponsor.name}
+                      </h3>
+                    </Card>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -155,24 +169,29 @@ export default function SponsorsSection({
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   {bronzeSponsors.map((sponsor) => (
-                    <Card
+                    <Link
                       key={sponsor.id}
-                      className="p-4 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200"
+                      href={sponsor.url || "#"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={!sponsor.url ? "pointer-events-none" : ""}
                     >
-                      <div className="flex items-center justify-center mb-2">
-                        <Image
-                          src={sponsor.logo || "/placeholder.svg"}
-                          alt={sponsor.name}
-                          width={60}
-                          height={60}
-                          className="object-contain"
-                          loading="eager"
-                        />
-                      </div>
-                      <h3 className="font-semibold text-gray-900 text-sm">
-                        {sponsor.name}
-                      </h3>
-                    </Card>
+                      <Card className="p-4 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200 h-full cursor-pointer">
+                        <div className="flex items-center justify-center mb-2">
+                          <Image
+                            src={sponsor.logo || "/placeholder.svg"}
+                            alt={sponsor.name}
+                            width={60}
+                            height={60}
+                            className="object-contain"
+                            loading="eager"
+                          />
+                        </div>
+                        <h3 className="font-semibold text-gray-900 text-sm">
+                          {sponsor.name}
+                        </h3>
+                      </Card>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -191,25 +210,32 @@ export default function SponsorsSection({
                     const [bgClasses, , iconBgClass] =
                       getPartnerColorClasses(partner.color).split(" ");
                     return (
-                      <Card
+                      <Link
                         key={partner.id}
-                        className={`p-4 text-center hover:shadow-lg transition-shadow bg-gradient-to-br ${bgClasses}`}
+                        href={partner.url || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={!partner.url ? "pointer-events-none" : ""}
                       >
-                        <div className="flex items-center justify-center mb-2">
-                          <Image
-                            src={partner.logo || "/placeholder.svg"}
-                            alt={partner.name}
-                            width={60}
-                            height={60}
-                            className="object-contain"
-                            loading="eager"
-                          />
-                        </div>
-                        <h3 className="font-semibold text-gray-900 text-sm">
-                          {partner.name}
-                        </h3>
-                      </Card>
-                    );
+                        <Card
+                          className={`p-4 text-center hover:shadow-lg transition-shadow bg-gradient-to-br ${bgClasses} h-full cursor-pointer`}
+                        >
+                          <div className="flex items-center justify-center mb-2">
+                            <Image
+                              src={partner.logo || "/placeholder.svg"}
+                              alt={partner.name}
+                              width={60}
+                              height={60}
+                              className="object-contain"
+                              loading="eager"
+                            />
+                          </div>
+                          <h3 className="font-semibold text-gray-900 text-sm">
+                            {partner.name}
+                          </h3>
+                        </Card>
+                      </Link>
+                    )
                   })}
                 </div>
               </div>
