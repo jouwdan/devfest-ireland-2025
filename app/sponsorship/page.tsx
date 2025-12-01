@@ -47,7 +47,7 @@ const sponsorshipTiers = [
   },
   {
     name: "Silver",
-    cost: "€1,250",
+    cost: "€1,500",
     maxSlots: 4,
     color: "gray",
     bgGradient: "from-gray-50 to-gray-100",
