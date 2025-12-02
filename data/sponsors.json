@@ -15,7 +15,15 @@
       "url": "https://frsrecruitment.com"
     }
   ],
-  "silverSponsors": [],
+  "silverSponsors": [
+    {
+      "id": "midlands-ict-network",
+      "name": "Midlands ICT Network",
+      "description": "Regional ICT cluster supporting local businesses and tech",
+      "logo": "/images/sponsors/midlands-ireland.png",
+      "url": "https://www.midlandsireland.ie/business/ict-cluster/"
+    }
+  ],
   "bronzeSponsors": [
     {
       "id": "v0",
