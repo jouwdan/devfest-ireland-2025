@@ -7,7 +7,7 @@ import Image from "next/image"
 interface Sponsor {
   id: string
   name: string
-  description: string
+  description?: string
   logo: string
   url?: string
 }
@@ -15,7 +15,7 @@ interface Sponsor {
 interface Partner {
   id: string
   name: string
-  description: string
+  description?: string
   logo: string
   type: string
   color: string
@@ -122,45 +122,176 @@ export default function SponsorsSection({
 
           {/* Silver Sponsors */}
           {silverSponsors[0] && (
-            <div>
-              <div className="text-center mb-6">
-                <Badge className="bg-gray-500 text-white px-4 py-2 text-lg">
-                  Silver Sponsors
-                </Badge>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {silverSponsors.map((sponsor) => (
-                  <Link
-                    key={sponsor.id}
-                    href={sponsor.url || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={!sponsor.url ? "pointer-events-none" : ""}
-                  >
-                    <Card className="p-8 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-gray-700 to-gray-800 border-gray-600 h-full cursor-pointer text-white">
-                      <div className="flex items-center justify-center mb-4">
-                        <Image
-                          src={sponsor.logo || "/placeholder.svg"}
-                          alt={sponsor.name}
-                          width={100}
-                          height={100}
-                          className="object-contain"
-                          loading="eager"
-                        />
-                      </div>
-                      <h3 className="font-semibold text-white text-sm">
-                        {sponsor.name}
-                      </h3>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            </div>
+            <>
+              {silverSponsors.length === 1 ? (
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  <div>
+                    <div className="text-center mb-6">
+                      <Badge className="bg-gray-500 text-white px-4 py-2 text-lg">
+                        Silver Sponsors
+                      </Badge>
+                    </div>
+                    <div className="flex flex-col space-y-4">
+                      {silverSponsors.map((sponsor) => (
+                        <Link
+                          key={sponsor.id}
+                          href={sponsor.url || "#"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={!sponsor.url ? "pointer-events-none" : ""}
+                        >
+                          <Card className="p-6 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-neutral-700 to-neutral-800 border-neutral-600 h-auto max-w-md mx-auto cursor-pointer text-white">
+                            <div className="flex items-center justify-center mb-3">
+                              <Image
+                                src={sponsor.logo || "/placeholder.svg"}
+                                alt={sponsor.name}
+                                width={80}
+                                height={80}
+                                className="object-contain"
+                                loading="eager"
+                              />
+                            </div>
+                            <h3 className="font-semibold text-white text-base">
+                              {sponsor.name}
+                            </h3>
+                            {sponsor.description && (
+                              <p className="text-sm text-gray-200 mt-2">
+                                {sponsor.description}
+                              </p>
+                            )}
+                          </Card>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="grid gap-8">
+                      {/* Bronze Sponsors */}
+                      {bronzeSponsors[0] && (
+                        <div>
+                          <div className="text-center mb-6">
+                            <Badge className="bg-amber-600 text-white px-3 py-1.5">
+                              Bronze Sponsors
+                            </Badge>
+                          </div>
+                          <div className="grid grid-cols-2 gap-4">
+                            {bronzeSponsors.map((sponsor) => (
+                              <Link
+                                key={sponsor.id}
+                                href={sponsor.url || "#"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={!sponsor.url ? "pointer-events-none" : ""}
+                              >
+                                <Card className="p-4 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200 h-full cursor-pointer">
+                                  <div className="flex items-center justify-center mb-2">
+                                    <Image
+                                      src={sponsor.logo || "/placeholder.svg"}
+                                      alt={sponsor.name}
+                                      width={60}
+                                      height={60}
+                                      className="object-contain"
+                                      loading="eager"
+                                    />
+                                  </div>
+                                  <h3 className="font-semibold text-gray-900 text-sm">
+                                    {sponsor.name}
+                                  </h3>
+                                </Card>
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Partners */}
+                      {partners[0] && (
+                        <div>
+                          <div className="text-center mb-6">
+                            <Badge className="bg-blue-600 text-white px-3 py-1.5">
+                              Service Partners
+                            </Badge>
+                          </div>
+                          <div className="grid grid-cols-2 gap-4">
+                            {partners.map((partner) => {
+                              const [bgClasses] = getPartnerColorClasses(partner.color).split(" ");
+                              return (
+                                <Link
+                                  key={partner.id}
+                                  href={partner.url || "#"}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className={!partner.url ? "pointer-events-none" : ""}
+                                >
+                                  <Card
+                                    className={`p-4 text-center hover:shadow-lg transition-shadow bg-gradient-to-br ${bgClasses} h-full cursor-pointer`}
+                                  >
+                                    <div className="flex items-center justify-center mb-2">
+                                      <Image
+                                        src={partner.logo || "/placeholder.svg"}
+                                        alt={partner.name}
+                                        width={60}
+                                        height={60}
+                                        className="object-contain"
+                                        loading="eager"
+                                      />
+                                    </div>
+                                    <h3 className="font-semibold text-gray-900 text-sm">
+                                      {partner.name}
+                                    </h3>
+                                  </Card>
+                                </Link>
+                              )
+                            })}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div>
+                  <div className="text-center mb-6">
+                    <Badge className="bg-gray-500 text-white px-4 py-2 text-lg">
+                      Silver Sponsors
+                    </Badge>
+                  </div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {silverSponsors.map((sponsor) => (
+                      <Link
+                        key={sponsor.id}
+                        href={sponsor.url || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={!sponsor.url ? "pointer-events-none" : ""}
+                      >
+                        <Card className="p-6 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200 h-full cursor-pointer">
+                          <div className="flex items-center justify-center mb-3">
+                            <Image
+                              src={sponsor.logo || "/placeholder.svg"}
+                              alt={sponsor.name}
+                              width={80}
+                              height={80}
+                              className="object-contain"
+                              loading="eager"
+                            />
+                          </div>
+                          <h3 className="font-semibold text-gray-900 text-sm">
+                            {sponsor.name}
+                          </h3>
+                        </Card>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
           )}
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Bronze Sponsors */}
-            {bronzeSponsors[0] && (
+            {/* Bronze Sponsors (when not shown in the right column) */}
+            {silverSponsors.length !== 1 && bronzeSponsors[0] && (
               <div>
                 <div className="text-center mb-6">
                   <Badge className="bg-amber-600 text-white px-3 py-1.5">
@@ -197,8 +328,8 @@ export default function SponsorsSection({
               </div>
             )}
 
-            {/* Partners */}
-            {partners[0] && (
+            {/* Partners (when not shown in the right column) */}
+            {silverSponsors.length !== 1 && partners[0] && (
               <div>
                 <div className="text-center mb-6">
                   <Badge className="bg-blue-600 text-white px-3 py-1.5">
@@ -207,8 +338,7 @@ export default function SponsorsSection({
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   {partners.map((partner) => {
-                    const [bgClasses, , iconBgClass] =
-                      getPartnerColorClasses(partner.color).split(" ");
+                    const [bgClasses] = getPartnerColorClasses(partner.color).split(" ");
                     return (
                       <Link
                         key={partner.id}
@@ -241,29 +371,27 @@ export default function SponsorsSection({
               </div>
             )}
           </div>
-        </div>
 
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">
-            Interested in sponsoring or partnering with DevFest Ireland 2025?
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Link href="/sponsorship">
-              <Button className="bg-blue-600 hover:bg-blue-700">
-                Become a Sponsor
-              </Button>
-            </Link>
-            <Link href="/sponsorship">
-              <Button
-                variant="outline"
-                className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
-              >
-                Partnership Opportunities
-              </Button>
-            </Link>
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-4">
+              Interested in sponsoring or partnering with DevFest Ireland 2025?
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <Link href="/sponsorship">
+                <Button className="bg-blue-600 hover:bg-blue-700">Become a Sponsor</Button>
+              </Link>
+              <Link href="/sponsorship">
+                <Button
+                  variant="outline"
+                  className="border-green-600 text-green-600 hover:bg-green-50 bg-transparent"
+                >
+                  Partnership Opportunities
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
