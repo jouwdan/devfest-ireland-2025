@@ -50,5 +50,15 @@
       "color": "blue",
       "url": "https://teamwork.com"
     }
+    ,
+    {
+      "id": "vimar",
+      "name": "Vimar",
+      "description": "Content Partner",
+      "logo": "/images/sponsors/vimar.webp",
+      "type": "Content Partner",
+      "color": "purple",
+      "url": "https://vimar.ie/"
+    }
   ]
 }

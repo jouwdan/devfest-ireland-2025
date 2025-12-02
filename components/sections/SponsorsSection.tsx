@@ -137,18 +137,18 @@ export default function SponsorsSection({
                     rel="noopener noreferrer"
                     className={!sponsor.url ? "pointer-events-none" : ""}
                   >
-                    <Card className="p-6 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-gray-50 to-gray-100 border-gray-200 h-full cursor-pointer">
-                      <div className="flex items-center justify-center mb-3">
+                    <Card className="p-8 text-center hover:shadow-lg transition-shadow bg-gradient-to-br from-gray-700 to-gray-800 border-gray-600 h-full cursor-pointer text-white">
+                      <div className="flex items-center justify-center mb-4">
                         <Image
                           src={sponsor.logo || "/placeholder.svg"}
                           alt={sponsor.name}
-                          width={80}
-                          height={80}
+                          width={100}
+                          height={100}
                           className="object-contain"
                           loading="eager"
                         />
                       </div>
-                      <h3 className="font-semibold text-gray-900 text-sm">
+                      <h3 className="font-semibold text-white text-sm">
                         {sponsor.name}
                       </h3>
                     </Card>
